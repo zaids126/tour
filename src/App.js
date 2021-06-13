@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+
+import AboutUs from './Components/AboutUs';
+import Booking from './Components/Booking';
+import Feature from './Components/Feature';
+import Header from './Components/Header'
+import Section from './Components/Section';
+import TourCard from './Components/TourCard';
+import Footer from './Components/Footer';
+import './sass/main.css';
+import Navigation from './Components/Navigation';
+import Modal from './Components/Modal';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+<div className="App">
+
+   <Modal/>   
+
+   <Navigation/>
+   <Header/>
+   <AboutUs />
+   <Feature/>
+   <TourCard/>
+   <Section/>
+   <Booking/>
+   <Footer/>
+  
+
+  
+   </div>
   );
 }
 
