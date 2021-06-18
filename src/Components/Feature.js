@@ -4,7 +4,7 @@ import { SiOpenstreetmap } from 'react-icons/si';
 import { BsMap,BsHeart } from 'react-icons/bs';
 
 
-const Feature = () => {
+const Feature = () =>   {
     return (
         <section className='section-features' id='#features'>
            
