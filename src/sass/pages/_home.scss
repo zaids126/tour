@@ -2,7 +2,7 @@
 
     background-color:$color-grey-light-1;
     padding: 25rem 0;
-    margin-top: -20vh;
+    // margin-top: -20vh;
 
     @include respond(tab-port){
         padding: 20rem 0;
@@ -13,13 +13,16 @@
 
 .section-features{
     padding: 20rem 0;
-    background-image:linear-gradient(to right bottom,
-    rgba($color-primary-light,0.8),
-    rgba($color-primary-dark,0.8)) 
-    ,url(../imgs/nat-4.jpg);
     background-size: cover;
+
     margin-top: -10rem;
     transform: skewY(-7deg);
+    // background-image: linear-gradient(to right bottom,$color-primary-light,$color-primary-dark);
+
+    // background-image: url(../imgs/Suntree.jpg);
+    // transition-delay: 2s;
+    // transition: all 1s linear;
+    animation: changeAnimation 20s infinite;
 
     & > *{
        transform: skewY(7deg); 
@@ -34,6 +37,29 @@
 }
 
 
+@keyframes changeAnimation {
+  0%{
+    background-image:
+    url(../imgs/Suntree.jpg); 
+  }
+
+  25%{ background-image:url(../imgs/FeatureImg.jpg)}
+
+  50%{ background-image:url(../imgs/TreeF.jpg)}
+
+
+  75%{ 
+    background-image: url(../imgs/WaterF.jpg);
+  }
+
+
+  100%{ 
+    background-image: url(../imgs/Suntree.jpg);
+   }
+
+
+
+}
 .section-tours{
     background-color:$color-grey-light-1;
     padding: 25rem 0 15rem 0;
@@ -101,7 +127,7 @@
 .container {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25), 0 1rem 1rem rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
     // width: 768px;
@@ -122,9 +148,14 @@
     z-index: 2;
   }
   
+
   .container.right-panel-active .sign-in-container {
     transform: translateX(100%);
+
   }
+.container.right-panel-active .sign-in-container{
+    opacity: 0;
+}
   
   .sign-up-container {
     left: 0;
@@ -133,6 +164,7 @@
     z-index: 1;
   }
   
+
   .container.right-panel-active .sign-up-container {
     transform: translateX(100%);
     opacity: 1;
@@ -146,6 +178,7 @@
       opacity: 0;
       z-index: 1;
     }
+
   
     50%,
     100% {
@@ -164,13 +197,20 @@
     transition: transform 0.6s ease-in-out;
     z-index: 100;
   }
+
   
   .container.right-panel-active .overlay-container {
     transform: translateX(-100%);
   }
   
   .overlay {
-    background-image:linear-gradient(to right,$color-primary-light,$color-primary-dark);
+    // background-image:linear-gradient(to right,$color-primary-light,$color-primary-dark),
+    // url('../imgs/nat-10.jpg');
+   background-image:linear-gradient(to right bottom,
+    rgba($color-primary-light,0.8),
+    rgba($color-primary-dark,0.8)) 
+    ,url(../imgs/nat-10.jpg);
+    background-size: cover;
     // background: -webkit-linear-gradient(to right, #222529, #222529);
     // background: linear-gradient(to right, #222529, #222529);
     background-repeat: no-repeat;
@@ -224,6 +264,37 @@
 .heading-secondary-booking{
     margin-left:5rem ;
 }
+
+
+.image__selector{
+
+    height: 5rem;
+    // padding: 1rem; 
+    // margin-left: 1rem;
+    // object-fit: contain;
+    width: 5rem;
+  }
+
+.image__selector:hover{
+  transform: scale(1.05) translateY(-.5rem);
+  box-shadow: 0 2.5rem 4rem rgba($color-black,.5);
+  z-index: 20;
+  // outline: 1.5rem solid $color-primary;
+}
+
+.image__selector:active{
+  transform: scale(1.1);
+  
+}
+
+
+
+
+// .image__part:checked ~ .image__radio .form__radio-but::after {
+//    opacity: 1;
+
+
+//   }
 
 
 

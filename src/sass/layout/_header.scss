@@ -1,21 +1,22 @@
 .header{
     position: relative;
     height: 95vh;
-    background-image:linear-gradient(to right bottom,
-    rgba($color-primary-light,0.8),
-    rgba($color-primary-dark,0.8)) 
-    ,url(../imgs/hero-small.jpg);
+    // background-image:linear-gradient(to right bottom,
+    // rgba($color-primary-light,0.8),
+    // rgba($color-primary-dark,0.8)) 
+    // ,url(../imgs/hero-small.jpg);
     background-size: cover;
     background-position: top;  
-    clip-path: polygon(0 0,100% 0, 100% 75vh,0 100%);
+    // background: $color-black ;
+    // clip-path: polygon(0 0,100% 0, 100% 75vh,0 100%);
 
 
     @media only screen and(min-resolution:192dpi) and (min-width:37.5em),(min-width:125em){
 
-         background-image:linear-gradient(to right bottom,
-         rgba($color-primary-light,0.8),
-         rgba($color-primary-dark,0.8)) 
-         ,url(../imgs/hero.jpg);
+        //  background-image:linear-gradient(to right bottom,
+        //  rgba($color-primary-light,0.8),
+        //  rgba($color-primary-dark,0.8)) 
+        //  ,url(../imgs/hero.jpg);
 
     }
 

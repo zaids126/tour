@@ -1,0 +1,89 @@
+
+
+.discover{
+
+
+    &__heading{
+
+        display: block;
+        justify-content: center;
+        padding-bottom:1rem ;
+        letter-spacing:2rem
+
+    }
+
+}
+
+
+.Wonder{
+
+
+    .Wonder1{
+
+        // position: relative;
+
+        // width: 100%;
+        // height: 100vh;
+    // background-color: rgb(43, 46, 68);
+    border-radius: 1rem;
+
+        
+
+        &__image{
+            
+            width: 100%;
+            height: 68rem;
+            background-size: cover;
+            border-radius: 1rem;
+           box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.25), 0 1rem 1rem rgba(0, 0, 0, 0.22);
+            // transform:translateY(-1rem) ;
+            // object-fit: cover;
+        }
+
+        &__container{
+
+            position: absolute;
+            width: 80%;
+            height: 75%;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            text-align:center;
+            border: 2rem solid white;
+            border-radius: 2rem;
+            
+
+           
+        
+            // background-color: black;
+        }
+
+        &__container-1{
+            // position: absolute;
+            width: 50%;
+            height: 100%;
+            background-color:#8983C5;
+        }
+
+       &__container-small{
+
+        position: relative;
+        top: 50%;
+
+        // width: 10rem;
+        // height: 10rem;
+
+       }     
+       &__image-small{
+
+        object-fit: cover;
+        width: 20rem;
+        height: 20rem;
+       }
+        
+    }
+
+   
+
+
+}

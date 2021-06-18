@@ -1,13 +1,25 @@
 .feature-box{
-    background-color: rgba($color-white,.8);
+    // background-color: rgba($color-white,.8);
     font-size: 1.5rem;
     padding: 2.5rem;
     text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+    color: $color-black;
+    // border-radius: 3px;
+    // box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
     transition: transition 0.3s;
+   --transition-duration: 500ms;
+    overflow: hidden;
+   
+   
 
-    @include respond(tab-port){
+background: rgba( 255, 255, 255, 0.65 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.0px );
+-webkit-backdrop-filter: blur( 0.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  
+@include respond(tab-port){
         padding: 2rem;
 
     }
@@ -17,7 +29,7 @@
         margin-bottom: .5rem;
         // background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
-       color:#28b485;
+       color:$color-black;
 
        @include respond(tab-port){
         margin-bottom:0;
@@ -28,9 +40,27 @@
 
      }
 
+    &::before{
+        content: '';
+        background:rgba($color-white,0.4);
+        width: 60%;
+        height: 100%;
+        top:0%;
+        position: absolute;
+        transform: skew(45deg);
+        left: -125%;
+        transition:  left 500ms ease-out;
+
+    } 
+
      &:hover{
-         transform: translateY(1.5rem) scale(1.03);
-     }
+         transform: translateY(1.5rem) ;
+     
+     &::before{
+         left: 150%;
+     }    
+     
+        }
 
 }
 

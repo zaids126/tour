@@ -26,6 +26,13 @@
     
         }
     
+
+
+    }
+
+    &--main-1{
+        font-weight: 1500;
+        // color: $color-primary-dark;
     }
 
     
@@ -50,7 +57,9 @@
     
     }
 
-
+    &--sub-1{
+        font-weight: 900;
+    }
     
 
 }
